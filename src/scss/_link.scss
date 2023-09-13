@@ -1,0 +1,31 @@
+.link {
+    text-decoration: none;
+    color: var(--white);
+    height: inherit;
+
+    &_reg {
+        display: block;
+        width: 130px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: var(--orange);
+        border: none;
+        padding: 5px 20px;
+    }
+
+    &_sign {
+        display: none;
+    }
+
+    &_social {
+        font-size: 0;
+    }
+}
+
+@media (min-width: $tv) {
+    .link {
+        &_sign {
+            display: inline;
+        }
+    }
+}

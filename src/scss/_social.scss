@@ -1,0 +1,11 @@
+.social {
+    &_header {
+        display: none;
+    }
+}
+
+@media (min-width: $tv) {
+    .social {
+        display: block;
+    }
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input[type="radio"] {
+    appearance: none;
+}
+
+/* Viewport Sizes*/
+
+/* Mobile viewport 375px */
+$mv: 375px;
+/* Tablet viewport 768px */
+$tv: 768px;
+/* PC viewport 1200px*/
+$pv: 1200px;
+/* Extra large viewport 1728px*/
+$extra: 1500px;
+
+/* Container Sizes */
+
+/* Mobile Container*/
+$mc: 88%;
+/* Tablet Container*/
+$tc: 91%;
+/* Pc Container*/
+$pc: 70%;
+/* PC Extra Container*/
+$pc-extra: 75%;
+
+/* Colors */
+:root {
+    --black: rgba(32, 32, 33, 1);
+    --white: rgba(255, 255, 255, 1);
+    --orange: rgba(255, 102, 19, 1);
+}
