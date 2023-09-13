@@ -6,3 +6,12 @@
         grid-row: 2/3;
     }
 }
+
+@media (min-width: $tv) {
+    .nav {
+        &_reg {
+            width: 380px;
+            grid-column: 1/5;
+        }
+    }
+}

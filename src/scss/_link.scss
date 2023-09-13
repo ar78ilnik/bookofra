@@ -4,13 +4,11 @@
     height: inherit;
 
     &_reg {
-        display: block;
-        width: 130px;
-        height: 30px;
         border-radius: 15px;
         background-color: var(--orange);
         border: none;
-        padding: 5px 20px;
+        padding: 3px 15px;
+        font-size: 80%;
     }
 
     &_sign {
@@ -20,12 +18,37 @@
     &_social {
         font-size: 0;
     }
+
+    &_bonus {
+        background-color: var(--green);
+        padding: 1.5em 4em;
+        border-radius: 3em;
+        font-weight: 600;
+    }
+
+    &_categories {
+        color: var(--black);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: center;
+        flex-basis: 110px;
+        font-size: 0.8em;
+    }
 }
 
 @media (min-width: $tv) {
     .link {
         &_sign {
             display: inline;
+        }
+
+        &_social {
+            display: block;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            border-radius: 50%;
         }
     }
 }
