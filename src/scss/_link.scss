@@ -35,6 +35,11 @@
         flex-basis: 110px;
         font-size: 0.8em;
     }
+
+    &_games {
+        color: var(--blue);
+        font-family: 'Helveticaneuecyr_roman', sans-serif;
+    }
 }
 
 @media (min-width: $tv) {

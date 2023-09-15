@@ -23,6 +23,16 @@
         flex-wrap: wrap;
         justify-content: space-around;
         row-gap: 5%;
+        margin-bottom: 2em;
+    }
+
+    &_cards {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
 
@@ -38,6 +48,13 @@
             justify-content: space-between;
             gap: 4em;
         }
+
+        &_cards {
+            width: 620px;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -50,6 +67,10 @@
 
         &_bonus {
             width: 800px;
+        }
+
+        &_cards {
+            width: 960px;
         }
     }
 }

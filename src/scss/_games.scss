@@ -1,0 +1,15 @@
+.games {
+    &__times {
+        font-family: Arial;
+        font-size: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__time {
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        font-size: 110%;
+    }
+}
