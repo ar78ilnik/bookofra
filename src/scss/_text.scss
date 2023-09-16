@@ -5,6 +5,15 @@
         text-transform: uppercase;
         font-size: 180%;
     }
+
+    &_partners {
+        font-size: 90%;
+        margin-bottom: 0.5em;
+    }
+
+    &_partners + ol {
+        margin-left: 1em;
+    }
 }
 
 @media (min-width: $tv) {
@@ -12,6 +21,10 @@
         &_bonus {
             font-size: 360%;
             text-align: end;
+        }
+
+        &_partners {
+            font-size: 100%;
         }
     }
 }

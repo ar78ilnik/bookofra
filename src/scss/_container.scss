@@ -1,15 +1,24 @@
 .container {
+    margin: 0 auto;
+    &_bonus,
+    &_cards,
+    &_sum,
+    &_games,
+    &_info {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
     &_header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 40px);
+        grid-template-rows: repeat(2, 50px);
         column-gap: 5%;
         justify-items: center;
         align-items: center;
     }
 
     &_bonus {
-        width: 80%;
         margin: 0 auto;
         margin-bottom: 2em;
         display: flex;
@@ -27,17 +36,32 @@
     }
 
     &_cards {
-        width: 80%;
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
     }
+
+    &_sum {
+        text-align: center;
+    }
+
+    &_games {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
 }
 
 @media (min-width: $tv) {
     .container {
+
         &_header {
             grid-template-columns: 0.8fr 0.3fr 0.7fr 2fr;
             column-gap: 1%;
@@ -60,17 +84,39 @@
 
 @media (min-width: $pv) {
     .container {
+
+    &_bonus,
+    &_cards,
+    &_sum,
+    &_games,
+    &_info,
+    &_partners {
+        width: 960px;
+        margin-bottom: 3em;
+    }
+
         &_header {
             width: 50%;
             margin: 0 auto;
+        }
+
+        &_categories {
+            width: 60%;
         }
 
         &_bonus {
             width: 800px;
         }
 
-        &_cards {
-            width: 960px;
+        &_cards,
+        &_info {
+            width: 1200px;
+        }
+
+        &_games {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1em;
         }
     }
 }

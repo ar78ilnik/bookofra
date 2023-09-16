@@ -3,6 +3,38 @@
     color: var(--white);
     height: inherit;
 
+    &_social {
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: url(../img/sprite-social-networks.webp);
+    }
+
+    &_social:nth-child(1) {
+        background-position: -2px 61px;
+    }
+
+    &_social:nth-child(2) {
+        background-position: -67px 95px;
+    }
+
+    &_social:nth-child(3) {
+        background-position: -134px 27px;
+    }
+
+    &_social:nth-child(4) {
+        background-position: -100px 94px;
+    }
+
+    &_social:nth-child(5) {
+        background-position: -68px 61px;
+    }
+
+    &_social:nth-child(6) {
+        background-position: -100px 61px;
+    }
+
     &_reg {
         border-radius: 15px;
         background-color: var(--orange);
@@ -39,6 +71,35 @@
     &_games {
         color: var(--blue);
         font-family: 'Helveticaneuecyr_roman', sans-serif;
+        font-size: 130%;
+        align-self: center;
+        text-align: center;
+        border-bottom-style: dotted;
+        border-bottom-width: 1px;
+    }
+
+    &_partners {
+        color: var(--links-partners);
+    }
+
+    &_partners:hover {
+        color: var(--blue);
+    }
+
+    &_play,
+    &_demo {
+        height: auto;
+    }
+
+    &_play {
+        background-color: var(--green);
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    &_demo {
+        color: var(--black);
+        text-decoration: underline dotted var(--black);
     }
 }
 
@@ -48,12 +109,20 @@
             display: inline;
         }
 
-        &_social {
-            display: block;
-            width: 25px;
-            height: 25px;
-            background-color: red;
-            border-radius: 50%;
+        &_games {
+            font-size: 210%;
+        }
+    }
+}
+
+@media (min-width: $pv) {
+    .link {
+        &_categories:hover {
+            color: var(--blue);
+        }
+
+        &_games {
+            font-size: 110%;
         }
     }
 }

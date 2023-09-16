@@ -2,6 +2,10 @@
     &_header {
         display: none;
     }
+
+    &__wrapper {
+        height: 30px;
+    }
 }
 
 @media (min-width: $tv) {

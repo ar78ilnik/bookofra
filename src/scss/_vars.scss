@@ -5,12 +5,8 @@
     object-fit: cover;
 }
 
-li {
-    list-style-type: none;
-}
-
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -47,4 +43,8 @@ $pc-extra: 75%;
     --orange: rgba(255, 102, 19, 1);
     --green: rgba(3, 165, 40, 1);
     --blue: rgba(0, 131, 195, 1);
+    --grey-light: rgba(185, 198, 204, 1);
+    --semi-transparent: rgba(255, 255, 255, 0.7);
+    --links-partners: rgba(169, 191, 202, 1);
+    --red: rgba(255, 0, 0, 1);
 }

@@ -1,0 +1,26 @@
+.sum {
+	&__quantity {
+		color: var(--blue);
+		font-size: 230%;
+	}
+}
+
+@media (min-width: $tv) {
+	.sum {
+		&__quantity {
+			font-size: 360%;
+		}
+	}
+}
+
+@media (min-width: $pv) {
+	.sum {
+		border-style: dotted;
+		border-width: 12px;
+		border-color: var(--grey-light);
+		padding-top: 2em;
+		&__quantity {
+			font-size: 660%;
+		}
+	}
+}

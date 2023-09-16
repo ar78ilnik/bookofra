@@ -1,0 +1,25 @@
+.table {
+	width: 45%;
+	font-size: 80%;
+	border-collapse: collapse;
+}
+
+.table thead {
+	color: var(--grey-light);
+}
+
+.table tr {
+	border-bottom: 1px solid var(--grey-light);
+}
+
+@media (min-width: $tv) {
+	.table {
+		font-size: 120%;
+	}
+}
+
+@media (min-width: $pv) {
+	.table {
+		font-size: 80%;
+	}
+}

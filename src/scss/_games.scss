@@ -1,9 +1,14 @@
 .games {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
     &__times {
-        font-family: Arial;
         font-size: 80%;
         display: flex;
         justify-content: space-between;
+        min-height: 6em;
     }
 
     &__time {
@@ -11,5 +16,49 @@
         display: flex;
         flex-direction: column;
         font-size: 110%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 1em;
+    }
+
+    &__cash {
+        font-size: 130%;
+    }
+
+    &__cualification {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: left;
+    }
+
+    &__red {
+        color: var(--red);
+    }
+}
+
+@media (min-width: $tv) {
+    .games {
+        &__times {
+            font-size: 120%;
+        }
+    }
+}
+
+@media (min-width: $pv) {
+    .games {
+        &__item {
+            flex-basis: 45%;
+        }
+
+        &__time {
+            font-size: 70%;
+        }
     }
 }

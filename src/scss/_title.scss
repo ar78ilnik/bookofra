@@ -1,0 +1,14 @@
+.title {
+	&_h2 {
+		font-size: 100%;
+		margin-bottom: 1em;
+	}
+}
+
+@media (min-width: $pv) {
+	.title {
+		&_h2 {
+			font-size: 150%;
+		}
+	}
+}
