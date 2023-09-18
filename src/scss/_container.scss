@@ -85,7 +85,9 @@
 
 @media (min-width: $pv) {
     .container {
-    &_header,
+    &_header {
+        width: 960px;
+    }
     &_bonus,
     &_cards,
     &_games,
