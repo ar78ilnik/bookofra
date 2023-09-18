@@ -4,7 +4,8 @@
     &_cards,
     &_sum,
     &_games,
-    &_info {
+    &_info,
+    &_partners {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 2em;
@@ -84,22 +85,16 @@
 
 @media (min-width: $pv) {
     .container {
-
+    &_header,
     &_bonus,
     &_cards,
-    &_sum,
     &_games,
+    &_sum,
     &_info,
     &_partners {
         width: 960px;
         margin-bottom: 3em;
     }
-
-        &_header {
-            width: 50%;
-            margin: 0 auto;
-        }
-
         &_categories {
             width: 60%;
         }
